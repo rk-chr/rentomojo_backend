@@ -34,7 +34,8 @@ const commentsController = () => {
         if (up === 1) {
             const obj = {
                 ...votedComment,
-                up: (votedComment.up.includes(user))
+                up: (votedComment.up.includes(user)
+                    || votedComment.down.includes(user) || votedComment.by === user)
                     ? votedComment.up : [...votedComment.up, user],
             };
             const newData = [obj, ...otherComments];

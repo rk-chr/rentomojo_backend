@@ -1,0 +1,36 @@
+{
+  "name": "rentomojo_backend",
+  "version": "1.0.0",
+  "description": "comments apis",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon -r esm app.js --ignore '*.json'",
+    "start": "NODE_ENV=production node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramki2486/rentomojo_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramki2486/rentomojo_backend/issues"
+  },
+  "homepage": "https://github.com/ramki2486/rentomojo_backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "ioredis": "^4.11.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.2.1",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0"
+  }
+}
